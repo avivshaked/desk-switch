@@ -4,6 +4,7 @@ This project contains the verified Windows-side pieces for switching from the Wi
 
 - Logitech MX Master 3S Easy-Switch via Logi Bolt.
 - Samsung Odyssey OLED G8/G80SD monitor input switching via SmartThings.
+- Keychron Q1 Max Bluetooth pairing notes for Windows/Mac.
 - KVM investigation notes for the VP-SW200 HDMI KVM.
 
 It intentionally avoids installing services, changing drivers, editing the registry, or depending on system-installed HIDAPI.
@@ -30,6 +31,12 @@ windows\screen-switch\switch-monitor-hdmi1.cmd
 ```
 
 The KVM remains manual for now. Keyboard hotkeys were extensively tested and did not work; no obvious USB HID control interface was found.
+
+The Keychron Q1 Max can be moved off direct USB/KVM routing by pairing Bluetooth slots separately:
+
+```text
+docs\keychron-bluetooth.md
+```
 
 ## Build On Windows
 
@@ -77,10 +84,11 @@ The token is not stored in this repo.
 
 ## Mac Handoff
 
-The Mac side still needs implementation. See:
+The Mac side has source tooling for the reverse handoff. See:
 
 ```text
 docs\mac-next-steps.md
+mac\README.md
 ```
 
-The key Mac-side job is switching the MX Master 3S back to slot 1 / Windows from whichever interface the Mac sees while the mouse is connected to slot 2.
+The key Mac-side job is switching the MX Master 3S back to slot 1 / Windows from the Bluetooth interface the Mac sees while the mouse is connected to slot 2. Start with read-only enumeration and dry-run commands before using the guarded write path.
