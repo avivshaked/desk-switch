@@ -61,7 +61,7 @@ Added Windows Credential Manager scripts for SmartThings:
 Credential target:
 
 ```text
-switch-handoff-smartthings-token
+desk-switch-smartthings-token
 ```
 
 The credential helper uses the native Windows Credential API via PowerShell `Add-Type` and `advapi32.dll`; it does not require external modules.

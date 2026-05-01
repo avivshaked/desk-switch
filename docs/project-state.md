@@ -62,7 +62,7 @@ Input map: HDMI1 -> PC, HDMI2 -> pc
 Credential target in this handoff project:
 
 ```text
-switch-handoff-smartthings-token
+desk-switch-smartthings-token
 ```
 
 The original exploration used `hidapitester-smartthings-token`; new repo users should run:

@@ -1,6 +1,6 @@
 # Session Notes
 
-This is a historical log from the original exploration workspace. Some paths and credential names mention `D:\Projects\code\hidapitester` or `hidapitester-smartthings-token`; the cleaned handoff project uses relative paths and `switch-handoff-smartthings-token`.
+This is a historical log from the original exploration workspace. Some paths and credential names mention `D:\Projects\code\hidapitester` or `hidapitester-smartthings-token`; the cleaned desk-switch project uses relative paths and `desk-switch-smartthings-token`.
 
 Date: 2026-05-01
 

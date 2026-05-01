@@ -2,7 +2,7 @@ param(
     [ValidateSet("set", "get", "delete")]
     [string]$Action = "get",
 
-    [string]$Target = "switch-handoff-smartthings-token"
+    [string]$Target = "desk-switch-smartthings-token"
 )
 
 $ErrorActionPreference = "Stop"

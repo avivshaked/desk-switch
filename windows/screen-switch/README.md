@@ -79,7 +79,7 @@ windows\screen-switch\switch-monitor-hdmi1.cmd
 The token is stored under the Credential Manager target:
 
 ```text
-switch-handoff-smartthings-token
+desk-switch-smartthings-token
 ```
 
 Delete it with:

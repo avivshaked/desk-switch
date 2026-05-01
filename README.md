@@ -64,7 +64,7 @@ Do not whitelist broad folders such as the project root.
 The Samsung monitor scripts use a SmartThings Personal Access Token stored in Windows Credential Manager under:
 
 ```text
-switch-handoff-smartthings-token
+desk-switch-smartthings-token
 ```
 
 Store it on Windows with:
