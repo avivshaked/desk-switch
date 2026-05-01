@@ -12,6 +12,7 @@ Known working automation outside the KVM:
 
 - Mouse to Mac slot 2: `mx-switch/switch-to-mac.cmd`
 - Screen to Mac input: `screen-switch/switch-monitor-hdmi1.cmd`
+- Keyboard can avoid USB/KVM routing by using Keychron Bluetooth slots; see `docs/keychron-bluetooth.md`.
 
 Manual/keyboard hotkey testing:
 
@@ -49,4 +50,9 @@ Most realistic automation fallback:
 - Use the external desktop controller/control port electrically.
 - If the controller is a simple momentary switch, it may be possible to automate it with a small USB relay/GPIO device wired across the button contacts.
 - This would be hardware work and should be handled carefully.
+
+Keyboard direction:
+
+- Prefer Bluetooth pairing for the Keychron Q1 Max instead of trying to switch the KVM through keyboard hotkeys.
+- Recommended map is BT1 / `Fn+1` for Windows and BT2 / `Fn+2` for Mac.
 

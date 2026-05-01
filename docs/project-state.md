@@ -5,6 +5,7 @@
 - Logitech MX Master 3S can be switched from Windows slot 1 to Mac slot 2 through the Windows Logi Bolt receiver.
 - Samsung Odyssey OLED G8/G80SD can be switched through SmartThings.
 - Samsung bottom source overlay can be dismissed with SmartThings remote `BACK`.
+- Keychron Q1 Max Bluetooth plan is documented with BT1 for Windows and BT2 for Mac.
 
 ## Verified Commands
 
@@ -76,3 +77,4 @@ windows\screen-switch\set-smartthings-token.cmd
 - DDC/CI monitor control failed with error `3223725442`.
 - Windows-side mouse return from slot 2 to slot 1 fails with HID++ `CONNECT_FAIL` because the mouse is no longer connected to the Windows Bolt receiver.
 - VP-SW200 KVM software switching not found.
+- Keychron Bluetooth switching remains manual via `Fn+1` / `Fn+2`; no keyboard-side automation is implemented.

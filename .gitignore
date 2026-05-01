@@ -5,6 +5,10 @@
 *.exp
 *.lib
 
+mac/mx-switch/mx-switch-plan
+mac/mx-switch/mx-switch-list
+mac/mx-switch/mx-switch-write
+
 screen-switch/smartthings-devices.json
 screen-switch/smartthings-monitor-status.json
 
