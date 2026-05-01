@@ -4,11 +4,13 @@ setlocal
 set "ROOT=%~dp0.."
 set "VCVARS=C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\VC\Auxiliary\Build\vcvars64.bat"
 
-if not exist "%VCVARS%" (
-    echo Could not find Visual Studio Build Tools vcvars64.bat:
-    echo %VCVARS%
-    exit /b 1
-)
+if exist "%VCVARS%" goto have_vcvars
+
+echo Could not find Visual Studio Build Tools vcvars64.bat:
+echo "%VCVARS%"
+exit /b 1
+
+:have_vcvars
 
 call "%VCVARS%"
 if errorlevel 1 exit /b %ERRORLEVEL%
