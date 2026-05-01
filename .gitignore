@@ -1,0 +1,10 @@
+*.exe
+*.obj
+*.ilk
+*.pdb
+*.exp
+*.lib
+
+screen-switch/smartthings-devices.json
+screen-switch/smartthings-monitor-status.json
+
